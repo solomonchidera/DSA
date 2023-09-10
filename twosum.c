@@ -6,6 +6,7 @@
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 {
+	int i, *result;
 
 	/*Create an array to store the result (indices of the two numbers).*/
 	int* result, numIndices;
@@ -16,7 +17,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 	numIndices = (int*)malloc(sizeof(int) * numsSize);
 
 	/* Initialize 'numIndices' with -1 to indicate that elements haven't been seen yet.*/
-	for (int i = 0; i < numsSize; i++)
+	for (i = 0; i < numsSize; i++)
 	{
 		numIndices[i] = -1;
 	}
