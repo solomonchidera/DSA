@@ -6,10 +6,9 @@
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 {
-	int i, *result;
+	int i, *result, *numIndices;
 
 	/*Create an array to store the result (indices of the two numbers).*/
-	int* result, numIndices;
 
 	result = (int*)malloc(2 * sizeof(int));
 
@@ -23,7 +22,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 	}
 
 	/* Iterate through the array.*/
-	for (int i = 0; i < numsSize; i++)
+	for (i = 0; i < numsSize; i++)
 	{
 		/* Calculate the complement of the current number with respect to the target.*/
 		int complement = target - nums[i];
