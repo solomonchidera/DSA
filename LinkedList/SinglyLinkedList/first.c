@@ -35,8 +35,12 @@ int main(void)
 
 	countnode(head);
 
-	int countnode()
-	{
+	return (0);
+}
+
+
+int countnode()
+{
 		struct node *head;
 		struct node *ptr;
 		int count;
@@ -54,7 +58,4 @@ int main(void)
 		printf("Number of nodes in this list is %d\n", count);
 
 		return (count);
-	}
-
-	return (0);
 }
