@@ -10,7 +10,7 @@ struct node
 int main(void)
 {
 	struct node *head;
-	struct node newnode;
+	struct node *newnode;
 	head = malloc(sizeof(struct node));
 
 	head->data = 100;
@@ -18,6 +18,7 @@ int main(void)
 	printf("%d\n", head->data);
 
 	newnode = malloc(sizeof(struct node));
+
 	newnode->data = 102;
 	newnode->next = NULL;
 	head->next = newnode;
