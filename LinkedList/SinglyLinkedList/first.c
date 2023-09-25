@@ -39,23 +39,22 @@ int main(void)
 }
 
 
-int countnode()
+int countnode(struct node *head)
 {
-		struct node *head;
-		struct node *ptr;
-		int count;
+	struct node *ptr;
+	int count;
 
-		count = 0;
-		if (head == NULL)
-			printf("List is empty\n");
-		ptr = head;
+	count = 0;
+	if (head == NULL)
+		printf("List is empty\n");
+	ptr = head;
 
-		while (ptr != NULL)
-		{
-			count++;
-			ptr = ptr->next;
-		}
-		printf("Number of nodes in this list is %d\n", count);
+	while (ptr != NULL)
+	{
+		count++;
+		ptr = ptr->next;
+	}
+	printf("Number of nodes in this list is %d\n", count);
 
-		return (count);
+	return (count);
 }
