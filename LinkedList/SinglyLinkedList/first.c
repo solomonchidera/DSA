@@ -9,7 +9,8 @@ struct node
 
 int main(void)
 {
-	struct node *head, newnode;
+	struct node *head;
+	struct node newnode;
 	head = malloc(sizeof(struct node));
 
 	head->data = 100;
