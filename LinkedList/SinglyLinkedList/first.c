@@ -1,5 +1,6 @@
 #include "dsa.h"
 
+int countnode();
 
 struct node
 {
@@ -31,6 +32,29 @@ int main(void)
 	head->next->next = newnode;
 
 	printf("%d\n", newnode->data);
+
+	countnode(head);
+
+	int countnode()
+	{
+		struct node *head;
+		struct node *ptr;
+		int count;
+
+		count = 0;
+		if (head == NULL)
+			printf("List is empty\n");
+		ptr = head;
+
+		while (ptr != NULL)
+		{
+			count++;
+			ptr = ptr->next;
+		}
+		printf("Number of nodes in this list is %d\n", count);
+
+		return (count);
+	}
 
 	return (0);
 }
