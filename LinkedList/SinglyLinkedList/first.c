@@ -24,5 +24,13 @@ int main(void)
 	head->next = newnode;
 	printf("%d\n", newnode->data);
 
+
+	newnode = malloc(sizeof(struct node));
+	newnode->data = 104;
+	newnode->next = NULL;
+	head->next->next = newnode;
+
+	printf("%d\n", newnode->data);
+
 	return (0);
 }
