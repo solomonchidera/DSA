@@ -30,7 +30,7 @@ int main(void)
 
 void print()
 {
-	node *temp;
+	node *temp, *head;
 
 	temp = head;
 
