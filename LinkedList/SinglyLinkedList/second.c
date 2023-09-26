@@ -12,7 +12,7 @@ int main(void)
 {
 
 
-	node *head, *newnode, *temp;
+	node *head, *newnode;
 	head = newnode;
 
 	newnode = malloc(sizeof(node));
@@ -30,6 +30,8 @@ int main(void)
 
 void print()
 {
+	node *temp;
+
 	temp = head;
 
 	while (temp != NULL)
