@@ -30,7 +30,7 @@ int main(void)
 
 	while (current != NULL)
 	{
-		if (current-> == targetValue)
+		if (current->data == targetValue)
 		{
 			printf("Found it: %d\n", current->data);
 			break;
