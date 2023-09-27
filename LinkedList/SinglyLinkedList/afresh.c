@@ -13,7 +13,7 @@ int main(void)
 	struct Node *head = NULL;
 	struct Node *current;
 	struct Node *newnode;
-	newnode = malloc(sizeof(struct node));
+	newnode = malloc(sizeof(struct Node));
 	newnode->data = 48;
 	newnode->next = NULL;
 
