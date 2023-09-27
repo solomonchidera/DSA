@@ -9,6 +9,7 @@ struct Node
 int main(void)
 {
 
+	int targetValue = 48;
 
 	struct Node *head = NULL;
 	struct Node *current;
@@ -26,5 +27,21 @@ int main(void)
 		printf("The content of the node is %d\n", current->data);
 		current = current->next;
 	}
+
+	while (current != NULL)
+	{
+		if (current-> == targetValue)
+		{
+			printf("Found it: %d\n", current->data);
+			break;
+		}
+		current = current->next;
+	}
+
+	if (current == NULL)
+	{
+		printf("Element %d found in the list.\n", targetValue);
+	}
+
 	return (0);
 }
